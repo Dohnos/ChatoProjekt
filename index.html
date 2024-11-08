@@ -1039,7 +1039,7 @@
 
     <script>
         // Inicializace EmailJS
-        emailjs.init("YOUR_PUBLIC_KEY"); // Nahraďte skutečným klíčem
+        emailjs.init("OwmvA6xONh2s5ESbm"); // Nahraďte skutečným klíčem
 
         // Zpracování kontaktního formuláře
         document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -1052,7 +1052,7 @@
                 message: this.elements.message.value
             };
 
-            emailjs.send('service_id', 'template_id', formData)
+            emailjs.send('service_yx70mqc', 'template_a23pq76', formData)
                 .then(function(response) {
                     alert('Zpráva byla úspěšně odeslána! 📧');
                     e.target.reset();
