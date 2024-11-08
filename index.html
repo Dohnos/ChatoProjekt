@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<!-- Základní meta tagy -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChataJedli.cz | Ubytování v Jeseníkách - Pronájem horské chaty v Jedlí</title>
+<meta name="description" content="Pronájem komfortní horské chaty v Jedlí, Jeseníky. Ubytování až pro 8 osob, plně vybavená kuchyň, 4 ložnice, 2 koupelny, wifi. 20 min na Bukovku, 35 min do Termálů Velké Losiny. Ideální pro rodiny a skupiny přátel.">
+<meta name="keywords" content="chata Jedlí, ubytování Jeseníky, horská chata, pronájem chaty, ubytování Jedlí, dovolená Jeseníky, ubytování Zábřeh, chata v přírodě, ubytování Buková hora, ubytování Velké Losiny">
+
+<!-- Důležité meta tagy pro vyhledávače -->
+<meta name="author" content="ChataJedli.cz">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="revisit-after" content="7 days">
+
+<!-- Open Graph meta tagy pro sdílení na sociálních sítích -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.chatajedli.cz">
+<meta property="og:title" content="ChataJedli.cz | Komfortní ubytování v Jeseníkách">
+<meta property="og:description" content="Pronájem krásné horské chaty v Jedlí, Jeseníky. Ideální pro rodiny a skupiny přátel. Plně vybavená chata, wifi, parkování, zahrada s posezením. Blízko lyžování i termály.">
+<meta property="og:image" content="https://www.chatajedli.cz/images/chata-header.jpg">
+<meta property="og:site_name" content="ChataJedli.cz">
+<meta property="og:locale" content="cs_CZ">
+
+<!-- Twitter Card meta tagy -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChataJedli.cz | Ubytování v Jeseníkách">
+<meta name="twitter:description" content="Komfortní horská chata v Jedlí, Jeseníky. Ideální pro rodiny a skupiny přátel. 20 min na Bukovku, 35 min do Termálů Velké Losiny.">
+<meta name="twitter:image" content="https://www.chatajedli.cz/images/chata-header.jpg">
+
+<!-- Geo meta tagy pro lokální SEO -->
+<meta name="geo.region" content="CZ">
+<meta name="geo.placename" content="Jedlí">
+<meta name="geo.position" content="49.9315570;16.7942795">
+<meta name="ICBM" content="49.9315570, 16.7942795">
+
+<!-- Schema.org značení pro lepší zobrazení ve vyhledávačích -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "ChataJedli.cz",
+  "image": "https://www.chatajedli.cz/images/chata-header.jpg",
+  "description": "Pronájem komfortní horské chaty v Jedlí, Jeseníky. Ubytování až pro 8 osob s plně vybavenou kuchyní.",
+  "priceRange": "2000-2500 CZK",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jedlí 156",
+    "addressLocality": "Jedlí",
+    "postalCode": "789 01",
+    "addressCountry": "CZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.9315570,
+    "longitude": 16.7942795
+  },
+  "telephone": "+420XXXXXXXXX",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Počet ložnic",
+      "value": 4
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Kapacita",
+      "value": "8 osob"
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "WiFi",
+      "value": true
+    }
+  ],
+  "checkinTime": "15:00",
+  "checkoutTime": "10:00"
+}
+</script>
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Kanonická URL -->
+<link rel="canonical" href="https://www.chatajedli.cz">
+
+<!-- Alternativní jazykové verze (pokud existují) -->
+<link rel="alternate" hreflang="cs" href="https://www.chatajedli.cz">
+<link rel="alternate" hreflang="en" href="https://www.chatajedli.cz/en">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanillajs-datepicker/1.3.4/js/datepicker-full.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vanillajs-datepicker/1.3.4/css/datepicker.min.css" rel="stylesheet">
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a4731 0%, #2d6a4f 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .datepicker-cell.disabled {
+            background-color: #ffcccc;
+        }
+        .icon-box {
+            transition: all 0.3s ease;
+        }
+        .icon-box:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigace -->
+    <nav class="gradient-bg text-white p-4 fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold flex items-center">
+                <i class="fas fa-mountain mr-2"></i> Chalupa Jedlí
+            </h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-green-200 transition flex items-center">
+                    <i class="fas fa-home mr-1"></i> Domů
+                </a>
+                <a href="#about" class="hover:text-green-200 transition flex items-center">
+                    <i class="fas fa-info-circle mr-1"></i> O chalupě
+                </a>
+                <a href="#activities" class="hover:text-green-200 transition flex items-center">
+                    <i class="fas fa-hiking mr-1"></i> Aktivity
+                </a>
+                <a href="#reservation" class="hover:text-green-200 transition flex items-center">
+                    <i class="fas fa-calendar-alt mr-1"></i> Rezervace
+                </a>
+                <a href="#contact" class="hover:text-green-200 transition flex items-center">
+                    <i class="fas fa-envelope mr-1"></i> Kontakt
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hlavní banner -->
+<header class="relative h-screen">
+    <!-- Pozadí s překryvem -->
+    <div class="absolute inset-0">
+        <img src="https://i.postimg.cc/PrBN7j8s/1.png" alt="Chalupa Jedlí" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
+    </div>
+
+    <!-- Navigační lišta -->
+    <nav class="relative z-10 bg-black/20 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-white font-bold text-xl">
+                    <i class="fas fa-home text-green-400 mr-2"></i> Chalupa Jedlí
+                </div>
+                <div class="space-x-6 text-white">
+                    <a href="#about" class="hover:text-green-400 transition-colors">O chalupě</a>
+                    <a href="#gallery" class="hover:text-green-400 transition-colors">Galerie</a>
+                    <a href="#prices" class="hover:text-green-400 transition-colors">Ceník</a>
+                    <a href="#contact" class="hover:text-green-400 transition-colors">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hlavní obsah banneru -->
+    <div class="relative h-full flex items-center justify-center text-white px-4">
+        <div class="text-center space-y-8 max-w-4xl">
+            <!-- Nadpis s animací -->
+            <h1 class="text-6xl md:text-7xl font-bold animate-fade-in">
+                <span class="block transform hover:scale-105 transition-transform">
+                    <i class="fas fa-tree text-green-400"></i> Vítejte v Chalupě Jedlí
+                </span>
+            </h1>
+
+            <!-- Hlavní popis -->
+            <p class="text-2xl font-light mb-8">Dokonalé místo pro váš odpočinek v přírodě</p>
+
+            <!-- Výhody s ikonami -->
+            <div class="grid md:grid-cols-3 gap-6 text-xl">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all">
+                    <i class="fas fa-skiing text-green-400 text-3xl mb-2"></i>
+                    <p>20 minut na lyžování na Bukovku 🎿</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all">
+                    <i class="fas fa-hot-tub text-green-400 text-3xl mb-2"></i>
+                    <p>35 minut do termálů Losiny 💦</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all">
+                    <i class="fas fa-hiking text-green-400 text-3xl mb-2"></i>
+                    <p>Turistika v okolí Jeseníků 🏔️</p>
+                </div>
+            </div>
+
+            <!-- CTA tlačítka -->
+            <div class="space-x-4 pt-8">
+                <a href="#contact" 
+                   class="inline-block bg-green-600 text-white px-8 py-4 rounded-xl hover:bg-green-700 transition transform hover:scale-105 shadow-lg hover:shadow-green-500/20">
+                    <i class="fas fa-calendar-check mr-2"></i> Rezervovat pobyt
+                </a>
+                <a href="#gallery" 
+                   class="inline-block bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/30 transition transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-images mr-2"></i> Prohlédnout galerii
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scrollovací šipka -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <a href="#about" class="text-3xl hover:text-green-400 transition-colors">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</header>
+
+<style>
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+}
+</style>
+  
+<!-- Galerie -->
+<section id="gallery" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <i class="fas fa-images text-green-600"></i> Galerie
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Obrázek 1 -->
+            <div class="space-y-3">
+                <div class="gallery-item relative group cursor-pointer" 
+                     onclick="openModal(this)" 
+                     data-title="🏡 Pohled na chalupu"
+                     data-description="Tradiční chalupa v Jeseníkách s krásnou zahradou a výhledem na okolní kopce. <i class='fas fa-mountain text-green-600'></i>">
+                    <img src="https://i.postimg.cc/PrBN7j8s/1.png" alt="Chalupa exteriér" 
+                        class="w-full h-64 object-cover rounded-xl shadow-xl hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-center">🏡 Pohled na chalupu</h3>
+            </div>
+            
+            <!-- Obrázek 2 -->
+            <div class="space-y-3">
+                <div class="gallery-item relative group cursor-pointer"
+                     onclick="openModal(this)"
+                     data-title="🛋️ Útulný obývací pokoj"
+                     data-description="Prostorný obývák s krbem pro příjemné večery. <i class='fas fa-fire text-orange-500'></i> Smart TV a pohodlná sedačka pro relaxaci.">
+                    <img src="https://i.postimg.cc/PrBN7j8s/1.png" alt="Obývací pokoj" 
+                        class="w-full h-64 object-cover rounded-xl shadow-xl hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-center">🛋️ Útulný obývací pokoj</h3>
+            </div>
+            
+            <!-- Obrázek 3 -->
+            <div class="space-y-3">
+                <div class="gallery-item relative group cursor-pointer"
+                     onclick="openModal(this)"
+                     data-title="👨‍🍳 Moderní kuchyně"
+                     data-description="Plně vybavená kuchyň s myčkou, lednicí a všemi potřebnými spotřebiči. <i class='fas fa-utensils text-gray-600'></i>">
+                    <img src="https://i.postimg.cc/PrBN7j8s/1.png" alt="Kuchyň" 
+                        class="w-full h-64 object-cover rounded-xl shadow-xl hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-center">👨‍🍳 Moderní kuchyně</h3>
+            </div>
+
+            <!-- Modal pro zvětšení obrázků -->
+            <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+                <div class="max-w-4xl w-full mx-4">
+                    <div class="relative">
+                        <img id="modalImage" src="" alt="" class="w-full rounded-xl">
+                        <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="text-white mt-4">
+                            <h3 id="modalTitle" class="text-2xl font-bold mb-2"></h3>
+                            <p id="modalDescription" class="text-lg"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function openModal(element) {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    const modalTitle = document.getElementById('modalTitle');
+                    const modalDescription = document.getElementById('modalDescription');
+                    
+                    modalImg.src = element.querySelector('img').src;
+                    modalTitle.innerHTML = element.dataset.title;
+                    modalDescription.innerHTML = element.dataset.description;
+                    
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeModal() {
+                    const modal = document.getElementById('imageModal');
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+
+                // Zavření modalu při kliknutí mimo obrázek
+                document.getElementById('imageModal').addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeModal();
+                    }
+                });
+
+                // Zavření modalu pomocí klávesy ESC
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        closeModal();
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+    <!-- O chalupě -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <i class="fas fa-home text-green-600"></i> O chalupě
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <img src="https://i.postimg.cc/PrBN7j8s/1.png" alt="Interiér chalupy" class="rounded-xl shadow-xl hover-scale">
+                </div>
+                <div class="space-y-6">
+                    <p class="text-xl">🏡 Naše chalupa se nachází v malebné obci Jedlí (789 01) obklopené krásnou přírodou Jeseníků.</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="icon-box bg-green-50 p-6 rounded-xl custom-shadow">
+                            <i class="fas fa-bed text-3xl text-green-600 mb-4"></i>
+                            <h3 class="font-bold mb-2">Ubytování</h3>
+                            <ul class="space-y-2">
+                                <li>🛏️ 4 ložnice (8 lůžek)</li>
+                                <li>🛋️ Prostorný obývák</li>
+                                <li>🚿 2 koupelny</li>
+                            </ul>
+                        </div>
+                        <div class="icon-box bg-green-50 p-6 rounded-xl custom-shadow">
+                            <i class="fas fa-utensils text-3xl text-green-600 mb-4"></i>
+                            <h3 class="font-bold mb-2">Vybavení</h3>
+                            <ul class="space-y-2">
+                                <li>🍳 Plně vybavená kuchyň</li>
+                                <li>🔥 Krb</li>
+                                <li>📺 Smart TV</li>
+                            </ul>
+                        </div>
+                        <div class="icon-box bg-green-50 p-6 rounded-xl custom-shadow">
+                            <i class="fas fa-wifi text-3xl text-green-600 mb-4"></i>
+                            <h3 class="font-bold mb-2">Služby</h3>
+                            <ul class="space-y-2">
+                                <li>📶 Rychlé WiFi</li>
+                                <li>🅿️ Parkování</li>
+                                <li>🧹 Závěrečný úklid</li>
+                            </ul>
+                        </div>
+                        <div class="icon-box bg-green-50 p-6 rounded-xl custom-shadow">
+                            <i class="fas fa-tree text-3xl text-green-600 mb-4"></i>
+                            <h3 class="font-bold mb-2">Venkovní prostor</h3>
+                            <ul class="space-y-2">
+                                <li>🏡 Velká zahrada</li>
+                                <li>🍖 Gril</li>
+                                <li>🪑 Posezení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+<!-- Aktivity v okolí -->
+<section id="activities" class="py-20 bg-gray-100">
+   <div class="container mx-auto px-4">
+       <!-- Hlavička sekce s mikroformátem Schema.org -->
+       <div itemscope itemtype="https://schema.org/TouristAttraction">
+           <h2 class="text-4xl font-bold text-center mb-4">
+               <i class="fas fa-map-marked-alt text-green-600"></i> Aktivity v okolí
+           </h2>
+           <p class="text-center text-lg text-gray-600 mb-12" itemprop="description">
+               Objevte krásy Jeseníků a okolí přímo z naší chalupy
+           </p>
+       </div>
+
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+           <!-- Lyžování -->
+           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+               <div class="text-center mb-6">
+                   <i class="fas fa-skiing text-4xl text-green-600"></i>
+                   <h3 class="text-2xl font-bold mt-4">⛷️ Lyžování</h3>
+               </div>
+               <ul class="space-y-3">
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.bukova-hora.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Ski areál Buková hora (20 km) - 2 sedačkové lanovky</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.skipremyslov.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Ski areál Přemyslov (15 km) - Rodinný areál</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.kouty.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Ski centrum Kouty (25 km) - Největší areál na Moravě</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Ski areál Štědrákova Lhota (8 km) - Ideální pro začátečníky</span>
+                       </span>
+                   </li>
+               </ul>
+           </div>
+
+           <!-- Wellness a relaxace -->
+           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+               <div class="text-center mb-6">
+                   <i class="fas fa-spa text-4xl text-green-600"></i>
+                   <h3 class="text-2xl font-bold mt-4">💆‍♂️ Wellness a relaxace</h3>
+               </div>
+               <ul class="space-y-3">
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.termaly-losiny.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Termály Velké Losiny (35 min) - Termální park</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.lazne-losiny.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Lázně Velké Losiny - Wellness procedury</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.aquacentrum.zabreh.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Aquacentrum Zábřeh (12 km) - Bazén a sauna</span>
+                       </a>
+                   </li>
+               </ul>
+           </div>
+
+           <!-- Turistika a příroda -->
+           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+               <div class="text-center mb-6">
+                   <i class="fas fa-hiking text-4xl text-green-600"></i>
+                   <h3 class="text-2xl font-bold mt-4">🏃‍♂️ Turistika a příroda</h3>
+               </div>
+               <ul class="space-y-3">
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.kralickysneznik.net" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Králický Sněžník (35 km) - Třetí nejvyšší hora Moravy</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Rozhledna Lázek (8 km) - Krásné výhledy</span>
+                       </span>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Naučná stezka Jedlí (500 m) - 5 km okruh</span>
+                       </span>
+                   </li>
+               </ul>
+           </div>
+
+           <!-- Kultura a památky -->
+           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+               <div class="text-center mb-6">
+                   <i class="fas fa-landmark text-4xl text-green-600"></i>
+                   <h3 class="text-2xl font-bold mt-4">🏰 Kultura a památky</h3>
+               </div>
+               <ul class="space-y-3">
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.zamek-usov.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Zámek Úsov (15 km) - Lovecko-lesnické muzeum</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.muzeum-sumperk.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Muzeum Šumperk (20 km) - Historie regionu</span>
+                       </a>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <a href="https://www.rucnipapirna.cz" target="_blank" rel="noopener" class="flex items-center text-gray-700 hover:text-green-600">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Ruční papírna Velké Losiny - Národní kulturní památka</span>
+                       </a>
+                   </li>
+               </ul>
+           </div>
+
+           <!-- Cyklistika -->
+           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+               <div class="text-center mb-6">
+                   <i class="fas fa-bicycle text-4xl text-green-600"></i>
+                   <h3 class="text-2xl font-bold mt-4">🚲 Cyklistika</h3>
+               </div>
+               <ul class="space-y-3">
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Cyklostezka Lupěné - Hoštejn (5 km)</span>
+                       </span>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Bike park Kouty (25 km) - Sjezdové tratě</span>
+                       </span>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>MTB trasy v okolí Jeseníků</span>
+                       </span>
+                   </li>
+               </ul>
+           </div>
+
+           <!-- Restaurace a služby -->
+           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+               <div class="text-center mb-6">
+                   <i class="fas fa-utensils text-4xl text-green-600"></i>
+                   <h3 class="text-2xl font-bold mt-4">🍽️ Restaurace a služby</h3>
+               </div>
+               <ul class="space-y-3">
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Hospoda Jedlí (500 m) - Domácí kuchyně</span>
+                       </span>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Restaurace U Kovárny Zábřeh (12 km)</span>
+                       </span>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>COOP Jedlí (300 m) - Potraviny</span>
+                       </span>
+                   </li>
+                   <li class="hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                       <span class="flex items-center text-gray-700">
+                           <i class="fas fa-chevron-right mr-2 text-green-600"></i>
+                           <span>Lékárna Štíty (8 km)</span>
+                       </span>
+                   </li>
+               </ul>
+           </div>
+       </div>
+
+       <!-- SEO text pod aktivitami -->
+       <div class="mt-12 text-gray-600 max-w-4xl mx-auto">
+           <h3 class="text-xl font-bold mb-4">Dovolená v Jeseníkách - Chalupa Jedlí</h3>
+           <p class="mb-4">
+               Naše chalupa v Jedlí je ideálním výchozím bodem pro objevování krás Jeseníků a okolí. V zimě můžete využít blízké lyžařské areály jako Buková hora, Přemyslov nebo Kouty nad Desnou. V létě je oblast perfektní pro pěší turistiku, cyklistiku a poznávání místních památek.
+           </p>
+           <p>
+               Oblast je známá také termálními lázněmi ve Velkých Losinách, historickými památkami jako je ruční papírna nebo zámek Úsov. Přímo v obci Jedlí najdete základní občanskou vybavenost včetně restaurace a obchodu s potravinami. Pro náročnější nákupy je možné využít blízká města Zábřeh nebo Šumperk.
+           </p>
+       </div>
+   </div>
+</section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <i class="fas fa-envelope text-green-600"></i> Kontakt
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="bg-green-50 p-6 rounded-xl custom-shadow">
+                        <h3 class="text-xl font-bold mb-4">📍 Kde nás najdete</h3>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-green-600 mr-4"></i>
+                                Jedlí 789 01, Česká republika
+                            </li>
+                                          <div class="w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.0637411472128!2d16.794279469673032!3d49.93155699821861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47120f156bfca371%3A0x141d56241a3e3cb9!2zSmVkbMOtIDE1NiwgNzg5IDAxIEplZGzDrQ!5e0!3m2!1scs!2scz!4v1731084778288!5m2!1scs!2scz" 
+                        class="w-full h-full"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-green-600 mr-4"></i>
+                                +420 123 456 789
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-green-600 mr-4"></i>
+                                info@chalupafiktivni.cz
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-xl custom-shadow">
+                        <h3 class="text-xl font-bold mb-4">⚡ Rychlé odkazy</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#prices" class="flex items-center text-green-600 hover:text-green-700">
+                                <i class="fas fa-file-pdf mr-2"></i> Ceník
+                            </a>
+                            <a href="#" class="flex items-center text-green-600 hover:text-green-700">
+                                <i class="fas fa-book mr-2"></i> Domovní řád
+                            </a>
+                            <a href="https://maps.app.goo.gl/Z4gWF1eGEPZsnRFj9" class="flex items-center text-green-600 hover:text-green-700">
+                                <i class="fas fa-map mr-2"></i> Mapa okolí
+                            </a>
+                            <a href="#faq" class="flex items-center text-green-600 hover:text-green-700">
+                                <i class="fas fa-question-circle mr-2"></i> FAQ
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">📝 Napište nám</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Jméno</label>
+                            <input type="text" name="name" class="w-full p-3 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" name="email" class="w-full p-3 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Předmět</label>
+                            <input type="text" name="subject" class="w-full p-3 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Zpráva</label>
+                            <textarea name="message" rows="4" class="w-full p-3 border rounded-lg" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">
+                            <i class="fas fa-paper-plane mr-2"></i> Odeslat zprávu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <!-- Sekce s cenami -->
+<section id="prices" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <i class="fas fa-tag text-green-600"></i> Ceník
+        </h2>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- Hlavní cenová karta -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-green-600 mb-8">
+                <div class="bg-green-600 text-white p-6 text-center">
+                    <h3 class="text-2xl font-bold">Pronájem celé chalupy</h3>
+                    <p class="text-lg mt-2">Kapacita až 8 osob</p>
+                </div>
+                <div class="p-8">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">2 000 Kč</span>
+                        <span class="text-gray-600">/noc</span>
+                    </div>
+                    
+                    <!-- Co je v ceně -->
+                    <div class="space-y-4 mb-8">
+                        <h4 class="text-xl font-bold mb-4 text-center">V ceně je zahrnuto:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Pronájem celé chalupy pro vaši skupinu</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Spotřeba energií a vody</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Ložní prádlo a ručníky</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Parkování pro 3-4 auta</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Wi-Fi připojení</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Závěrečný úklid</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-600 mr-3"></i>
+                                <span>Využití zahrady s posezením a grilem</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Doplňující informace -->
+                    <div class="space-y-4 bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-bold mb-2">Důležité informace:</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-info-circle text-blue-500 mr-3 mt-1"></i>
+                                <span>Minimální délka pobytu: 2 noci</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-info-circle text-blue-500 mr-3 mt-1"></i>
+                                <span>Záloha: 50% z celkové částky při rezervaci</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-info-circle text-blue-500 mr-3 mt-1"></i>
+                                <span>Doplatek: nejpozději 14 dní před příjezdem</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-blue-500 mr-3 mt-1"></i>
+                                <span>Poplatek za domácí mazlíčky: 200 Kč/pobyt</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sezónní ceny -->
+            <div class="bg-gray-50 rounded-xl p-6 text-center">
+                <h4 class="font-bold mb-4">Sezónní ceny</h4>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="p-4 bg-white rounded-lg shadow">
+                        <p class="font-bold">Hlavní sezóna</p>
+                        <p class="text-sm text-gray-600">červenec - srpen</p>
+                        <p class="text-lg font-bold text-green-600 mt-2">2 500 Kč/noc</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow">
+                        <p class="font-bold">Zimní sezóna</p>
+                        <p class="text-sm text-gray-600">prosinec - březen</p>
+                        <p class="text-lg font-bold text-green-600 mt-2">2 200 Kč/noc</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow">
+                        <p class="font-bold">Mimo sezónu</p>
+                        <p class="text-sm text-gray-600">ostatní měsíce</p>
+                        <p class="text-lg font-bold text-green-600 mt-2">2 000 Kč/noc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <section id="special-offers" class="py-20 bg-gradient-to-r from-green-600 to-green-800 text-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Speciální nabídky</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Zimní nabídka -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-4">❄️ Zimní pohoda</h3>
+                <p class="mb-4">Rezervujte pobyt na 5 a více nocí v zimní sezóně a získejte:</p>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-check mr-2"></i>10% slevu na celý pobyt</li>
+                    <li><i class="fas fa-check mr-2"></i>Dřevo do krbu zdarma</li>
+                </ul>
+            </div>
+            
+            <!-- Letní nabídka -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-4">☀️ Letní radovánky</h3>
+                <p class="mb-4">Při rezervaci týdenního pobytu v létě získáte:</p>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-check mr-2"></i>Zapůjčení kol zdarma</li>
+                    <li><i class="fas fa-check mr-2"></i>Balíček s lokálními produkty</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <section id="reviews" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <i class="fas fa-stars text-green-600"></i> Co o nás říkají hosté
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Recenze 1 -->
+            <div class="bg-gray-50 rounded-xl p-6 relative">
+                <div class="absolute -top-4 left-6">
+                    <i class="fas fa-quote-left text-4xl text-green-600 opacity-25"></i>
+                </div>
+                <div class="text-yellow-400 mb-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <p class="italic mb-4">"Krásná chalupa v nádherném prostředí. Perfektně vybavená, čistá a útulná. Určitě se vrátíme!"</p>
+                <p class="font-bold">Rodina Novákových</p>
+                <p class="text-sm text-gray-600">Srpen 2023</p>
+            </div>
+            <!-- Další recenze... -->
+                      <!-- Recenze 1 -->
+            <div class="bg-gray-50 rounded-xl p-6 relative">
+                <div class="absolute -top-4 left-6">
+                    <i class="fas fa-quote-left text-4xl text-green-600 opacity-25"></i>
+                </div>
+                <div class="text-yellow-400 mb-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <p class="italic mb-4">"Krásná chalupa v nádherném prostředí. Perfektně vybavená, čistá a útulná. Určitě se vrátíme!"</p>
+                <p class="font-bold">Rodina Novákových</p>
+                <p class="text-sm text-gray-600">Srpen 2023</p>
+            </div>
+                      <!-- Recenze 1 -->
+            <div class="bg-gray-50 rounded-xl p-6 relative">
+                <div class="absolute -top-4 left-6">
+                    <i class="fas fa-quote-left text-4xl text-green-600 opacity-25"></i>
+                </div>
+                <div class="text-yellow-400 mb-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <p class="italic mb-4">"Krásná chalupa v nádherném prostředí. Perfektně vybavená, čistá a útulná. Určitě se vrátíme!"</p>
+                <p class="font-bold">Rodina Novákových</p>
+                <p class="text-sm text-gray-600">Srpen 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <!-- FAQ Sekce -->
+<section id="faq" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            <i class="fas fa-question-circle text-green-600"></i> Často kladené otázky
+        </h2>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+            <!-- Otázka 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <button class="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center" 
+                        onclick="toggleFaq(this)">
+                    <span class="text-lg font-semibold">
+                        🕒 V kolik hodin je check-in a check-out?
+                    </span>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 py-4 bg-gray-50 border-t">
+                    <p>Check-in je možný od 15:00 do 18:00. Check-out je do 10:00. Jiné časy je možné domluvit individuálně po předchozí domluvě.</p>
+                </div>
+            </div>
+
+            <!-- Otázka 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <button class="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center"
+                        onclick="toggleFaq(this)">
+                    <span class="text-lg font-semibold">
+                        🐕 Je možné vzít s sebou domácí mazlíčky?
+                    </span>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 py-4 bg-gray-50 border-t">
+                    <p>Ano, menší domácí mazlíčci jsou po předchozí domluvě vítáni. Účtujeme poplatek 200 Kč/pobyt za zvíře. Prosíme o dodržování čistoty a pořádku.</p>
+                </div>
+            </div>
+
+            <!-- Otázka 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <button class="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center"
+                        onclick="toggleFaq(this)">
+                    <span class="text-lg font-semibold">
+                        🅿️ Kde je možné parkovat?
+                    </span>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 py-4 bg-gray-50 border-t">
+                    <p>Přímo u chalupy je k dispozici soukromé parkoviště pro 3-4 auta. Parkování je v ceně ubytování.</p>
+                </div>
+            </div>
+
+            <!-- Otázka 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <button class="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center"
+                        onclick="toggleFaq(this)">
+                    <span class="text-lg font-semibold">
+                        💳 Jaké jsou možnosti platby?
+                    </span>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 py-4 bg-gray-50 border-t">
+                    <p>Přijímáme platby převodem na účet (záloha 50% při rezervaci, doplatek nejpozději 14 dní před příjezdem) nebo v hotovosti při příjezdu.</p>
+                </div>
+            </div>
+
+            <!-- Otázka 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <button class="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center"
+                        onclick="toggleFaq(this)">
+                    <span class="text-lg font-semibold">
+                        🧺 Je v ceně závěrečný úklid?
+                    </span>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 py-4 bg-gray-50 border-t">
+                    <p>Ano, závěrečný úklid je v ceně ubytování. Prosíme pouze o základní úklid před odjezdem (umytí nádobí, vynešení koše, srovnání nábytku).</p>
+                </div>
+            </div>
+
+            <!-- Otázka 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <button class="w-full px-6 py-4 text-left focus:outline-none flex justify-between items-center"
+                        onclick="toggleFaq(this)">
+                    <span class="text-lg font-semibold">
+                        🏃 Jaké jsou možnosti vyžití v okolí?
+                    </span>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                </button>
+                <div class="hidden px-6 py-4 bg-gray-50 border-t">
+                    <p>V okolí najdete spoustu turistických tras, cyklostezek a v zimě běžkařských tratí. Nejbližší koupaliště je vzdálené 5 km, aquapark 15 km. V dosahu jsou také hrady, zámky a další turistické atrakce.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript pro fungování FAQ -->
+    <script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.fa-chevron-down');
+            
+            // Toggle obsah
+            content.classList.toggle('hidden');
+            
+            // Rotace šipky
+            icon.classList.toggle('rotate-180');
+            
+            // Zavřít ostatní otevřené FAQ
+            const allContents = document.querySelectorAll('#faq .hidden');
+            const allIcons = document.querySelectorAll('#faq .fa-chevron-down');
+            
+            document.querySelectorAll('#faq button').forEach((otherButton, index) => {
+                if (otherButton !== button && !allContents[index].classList.contains('hidden')) {
+                    allContents[index].classList.add('hidden');
+                    allIcons[index].classList.remove('rotate-180');
+                }
+            });
+        }
+    </script>
+</section>
+
+<!-- Footer -->
+<footer class="gradient-bg text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <!-- První sloupec -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Chalupa Jedlí</h3>
+                <p>🏡 Váš dokonalý únik do přírody</p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="hover:text-green-200"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-green-200"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-green-200"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Druhý sloupec -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Užitečné odkazy</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-green-200">Ochrana osobních údajů</a></li>
+                    <li><a href="#" class="hover:text-green-200">Obchodní podmínky</a></li>
+                    <li><a href="#" class="hover:text-green-200">Storno podmínky</a></li>
+                </ul>
+            </div>
+            
+            <!-- Třetí sloupec s mapou -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">📍 Kde nás najdete</h3>
+                <div class="w-full h-[300px] rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.0637411472128!2d16.794279469673032!3d49.93155699821861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47120f156bfca371%3A0x141d56241a3e3cb9!2zSmVkbMOtIDE1NiwgNzg5IDAxIEplZGzDrQ!5e0!3m2!1scs!2scz!4v1731084778288!5m2!1scs!2scz" 
+                        class="w-full h-full"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="mt-4">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Jedlí 156, 789 01 Jedlí
+                </p>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center pt-8 border-t border-green-700">
+            <p>&copy; 2024 Chalupa Jedlí. Všechna práva vyhrazena. 🌲</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Inicializace EmailJS
+        emailjs.init("YOUR_PUBLIC_KEY"); // Nahraďte skutečným klíčem
+
+        // Zpracování kontaktního formuláře
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: this.elements.name.value,
+                email: this.elements.email.value,
+                subject: this.elements.subject.value,
+                message: this.elements.message.value
+            };
+
+            emailjs.send('service_id', 'template_id', formData)
+                .then(function(response) {
+                    alert('Zpráva byla úspěšně odeslána! 📧');
+                    e.target.reset();
+                })
+                .catch(function(error) {
+                    alert('Došlo k chybě při odesílání zprávy. Zkuste to prosím znovu.');
+                });
+        });
+
+        // Animace při scrollování
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.hover-scale');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                if(position.top < window.innerHeight && position.bottom >= 0) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Mobilní menu
+        const mobileMenuBtn = document.createElement('button');
+        mobileMenuBtn.className = 'md:hidden text-white';
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+        document.querySelector('nav .container').appendChild(mobileMenuBtn);
+
+        const mobileMenu = document.querySelector('nav .md\\:flex');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-full');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('w-full');
+            mobileMenu.classList.toggle('bg-green-800');
+            mobileMenu.classList.toggle('p-4');
+        });
+    </script>
+</body>
+</html>
