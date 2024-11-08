@@ -149,68 +149,56 @@
     </nav>
 
 <!-- Hlavní banner -->
-<header class="relative h-screen">
+<header class="relative min-h-screen">
     <!-- Pozadí s překryvem -->
     <div class="absolute inset-0">
         <img src="https://i.postimg.cc/PrBN7j8s/1.png" alt="Chalupa Jedlí" 
              class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
     </div>
-
-    <!-- Navigační lišta -->
-    <nav class="relative z-10 bg-black/20 backdrop-blur-sm">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-white font-bold text-xl">
-                    <i class="fas fa-home text-green-400 mr-2"></i> Chalupa Jedlí
-                </div>
-                <div class="space-x-6 text-white">
-                    <a href="#about" class="hover:text-green-400 transition-colors">O chalupě</a>
-                    <a href="#gallery" class="hover:text-green-400 transition-colors">Galerie</a>
-                    <a href="#prices" class="hover:text-green-400 transition-colors">Ceník</a>
-                    <a href="#contact" class="hover:text-green-400 transition-colors">Kontakt</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+  
     <!-- Hlavní obsah banneru -->
-    <div class="relative h-full flex items-center justify-center text-white px-4">
-        <div class="text-center space-y-8 max-w-4xl">
+    <div class="relative min-h-screen flex items-center justify-center text-white px-4 py-20">
+        <div class="text-center space-y-6 md:space-y-8 w-full max-w-4xl">
             <!-- Nadpis s animací -->
-            <h1 class="text-6xl md:text-7xl font-bold animate-fade-in">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold animate-fade-in px-2">
                 <span class="block transform hover:scale-105 transition-transform">
-                    <i class="fas fa-tree text-green-400"></i> Vítejte v Chalupě Jedlí
+                    <i class="fas fa-tree text-green-400"></i> 
+                    <span class="block sm:inline">Vítejte v</span> 
+                    <span class="block sm:inline">Chalupě Jedlí</span>
                 </span>
             </h1>
 
             <!-- Hlavní popis -->
-            <p class="text-2xl font-light mb-8">Dokonalé místo pro váš odpočinek v přírodě</p>
+            <p class="text-xl sm:text-2xl font-light mb-4 sm:mb-8 px-4">
+                Dokonalé místo pro váš odpočinek v přírodě
+            </p>
 
             <!-- Výhody s ikonami -->
-            <div class="grid md:grid-cols-3 gap-6 text-xl">
+            <div class="grid gap-4 sm:gap-6 px-4 sm:px-0
+                        grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all">
-                    <i class="fas fa-skiing text-green-400 text-3xl mb-2"></i>
-                    <p>20 minut na lyžování na Bukovku 🎿</p>
+                    <i class="fas fa-skiing text-green-400 text-2xl sm:text-3xl mb-2"></i>
+                    <p class="text-base sm:text-lg lg:text-xl">20 minut na lyžování na Bukovku 🎿</p>
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all">
-                    <i class="fas fa-hot-tub text-green-400 text-3xl mb-2"></i>
-                    <p>35 minut do termálů Losiny 💦</p>
+                    <i class="fas fa-hot-tub text-green-400 text-2xl sm:text-3xl mb-2"></i>
+                    <p class="text-base sm:text-lg lg:text-xl">35 minut do termálů Losiny 💦</p>
                 </div>
-                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all">
-                    <i class="fas fa-hiking text-green-400 text-3xl mb-2"></i>
-                    <p>Turistika v okolí Jeseníků 🏔️</p>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 transition-all sm:col-span-2 lg:col-span-1">
+                    <i class="fas fa-hiking text-green-400 text-2xl sm:text-3xl mb-2"></i>
+                    <p class="text-base sm:text-lg lg:text-xl">Turistika v okolí Jeseníků 🏔️</p>
                 </div>
             </div>
 
             <!-- CTA tlačítka -->
-            <div class="space-x-4 pt-8">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:space-x-4 pt-6 sm:pt-8 px-4">
                 <a href="#contact" 
-                   class="inline-block bg-green-600 text-white px-8 py-4 rounded-xl hover:bg-green-700 transition transform hover:scale-105 shadow-lg hover:shadow-green-500/20">
+                   class="w-full sm:w-auto bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-green-700 transition transform hover:scale-105 shadow-lg hover:shadow-green-500/20 text-base sm:text-lg">
                     <i class="fas fa-calendar-check mr-2"></i> Rezervovat pobyt
                 </a>
                 <a href="#gallery" 
-                   class="inline-block bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl hover:bg-white/30 transition transform hover:scale-105 shadow-lg">
+                   class="w-full sm:w-auto bg-white/20 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-white/30 transition transform hover:scale-105 shadow-lg text-base sm:text-lg">
                     <i class="fas fa-images mr-2"></i> Prohlédnout galerii
                 </a>
             </div>
@@ -218,8 +206,8 @@
     </div>
 
     <!-- Scrollovací šipka -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <a href="#about" class="text-3xl hover:text-green-400 transition-colors">
+    <div class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <a href="#about" class="text-2xl sm:text-3xl hover:text-green-400 transition-colors">
             <i class="fas fa-chevron-down"></i>
         </a>
     </div>
@@ -232,7 +220,7 @@
 }
 
 .animate-fade-in {
-    animation: fade-in 1s ease-out forwards;
+    animation: fade-in 1.2s ease-out forwards;
 }
 </style>
   
@@ -1034,10 +1022,17 @@
             </div>
         </div>
         
-        <!-- Copyright -->
-        <div class="text-center pt-8 border-t border-green-700">
-            <p>&copy; 2024 Chalupa Jedlí. Všechna práva vyhrazena. 🌲</p>
-        </div>
+<!-- Copyright -->
+<div class="text-center pt-8 border-t border-green-700">
+    <p>&copy; 2024 Chalupa Jedlí. Všechna práva vyhrazena. 🌲</p>
+    <div class="mt-2">
+        <a href="https://info.flagcounter.com/5uoX">
+            <img src="https://s11.flagcounter.com/count/5uoX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" 
+                 alt="Flag Counter" 
+                 border="0">
+        </a>
+    </div>
+</div>
     </div>
 </footer>
 
