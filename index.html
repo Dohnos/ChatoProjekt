@@ -1090,6 +1090,12 @@
                     <a href="#" class="hover:text-green-200"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
+
+          <script>
+                if (window.location.host === 'www.chatajedli.cz') {
+        window.location.replace('https://chatajedli.cz' + window.location.pathname + window.location.search);
+    }
+          </script>
             
             <!-- Druhý sloupec -->
             <div>
@@ -1172,9 +1178,6 @@
             });
         });
       
-    if (window.location.host === 'www.chatajedli.cz') {
-        window.location.replace('https://chatajedli.cz' + window.location.pathname + window.location.search);
-    }
         // Mobilní menu
         const mobileMenuBtn = document.createElement('button');
         mobileMenuBtn.className = 'md:hidden text-white';
