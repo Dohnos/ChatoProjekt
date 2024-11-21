@@ -1171,7 +1171,10 @@
                 }
             });
         });
-
+      
+    if (window.location.host === 'www.chatajedli.cz') {
+        window.location.replace('https://chatajedli.cz' + window.location.pathname + window.location.search);
+    }
         // Mobilní menu
         const mobileMenuBtn = document.createElement('button');
         mobileMenuBtn.className = 'md:hidden text-white';
